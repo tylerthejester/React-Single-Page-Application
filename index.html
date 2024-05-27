@@ -13,76 +13,131 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
     <script src="https://kit.fontawesome.com/8f167b808f.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #000000;">
-        <div class="container">
-            <a class="navbar-brand libre-barcode" style="font-size: 40px;" href="https://tylerthejester.github.io/">TamTylerTran</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="https://tylerthejester.github.io/">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="projects.html">Projects Page</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="https://github.com/tylerthejester/PacMen-Exercise">Random Pac-Men</a></li>
-                        <li><a class="dropdown-item" href="https://github.com/tylerthejester/Eye-Exercise">Moving Eyes</a></li>
-                        <li><a class="dropdown-item" href="https://github.com/tylerthejester/Real-Time-Bus-Tracker">Real Time Bus Tracker</a></li>
-                        <!-- <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                    </ul>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Others</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li> -->
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-            </div>
-        </div>
-    </nav>
 
-    <div class="project-wrapper" style="padding-top: 10px">
-        <h1 class="index-intro-1">A Daydreamer, A Night-Tinkerer</h1>
-        <p class="tyme-link">Tyler is a UX Designer, Developer, and Researcher who would like to bring simple, meaningful, and fun experiences to everyone. Currently, he is learning Full Stack Development with MERN @ MIT xPRO.</p>
-        <p></p>
-        <div class="view-projects">More about me &#8595;</div>
-
-        <div class="about-top" style="margin-bottom: 50px;">
-            <div class="about-link">
-                <a href="https://github.com/tylerthejester"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/tamtranht02"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:tamtranht02@gmail.com"><i class="far fa-envelope"></i></a>
-                <!-- <a href="resume-tyler-tran.pdf">Resume</a> -->
-            </div>
-            <img src="images/tyler-profile-pic.jpg" alt="profile-pic" class="tyler-image">
-            <p>GitHub username: tylerthejester</p>
-            <p>Being both creative and analytical, Tyler loves creating efficient and enjoyable products that inspire users to have a meaningful experience. When he is free, he likes sleeping (a lot), reading (currently obsessed with Dune universe), going to beaches, basketball, pickleball, badminton, and photography.</p>
-            <p>Now looking for opportunities (either in Design, Development, Research, or in between) to further contribute, learn different perspectives, and grow.</p>
-        </div>
-
-    </div>
-    
-    <div>
-        <div class="tyler-footer libre-barcode">
-            <div>2024 TamTylerTran | Created with spice~</div>
+<!-- ------------------ NAVBAR ------------------ -->
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #000000;">
+    <div class="container">
+        <a class="navbar-brand libre-barcode" style="font-size: 40px;" href="https://tylerthejester.github.io/">TamTylerTran</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#/projects">Projects</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="projects.html">Projects Page</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="https://github.com/tylerthejester/PacMen-Exercise">Random Pac-Men</a></li>
+                    <li><a class="dropdown-item" href="https://github.com/tylerthejester/Eye-Exercise">Moving Eyes</a></li>
+                    <li><a class="dropdown-item" href="https://github.com/tylerthejester/Real-Time-Bus-Tracker">Real Time Bus Tracker</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#">Others</a>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li> -->
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
         </div>
     </div>
-    
-    <script src="js/bootstrap.js"></script>
+</nav>
+
+<style>
+  .text-primary{
+    font-size: 1.5em; 
+  }
+</style>
+
+<div style="margin-top: 100px">
+    <div class="container">
+        <a href="#/about" class="text-primary">About</a>,   
+        <a href="#/projects" class="text-primary">Projects</a>
+    </div>
+    <div id="content"></div>
+</div>
+
+<script>
+
+    var routes = {
+        '':          'about.html',     
+        '/':         'about.html',
+        '#/about':    'about.html',                
+        '#/projects':  'projects.html',
+    };
+
+    async function router(){
+        console.log(location.hash);
+        var innerElement = '';
+
+        // get requested page
+        var link = window.location.hash;
+
+        // ----------------------------------------
+        // If more than one parameter in the link, 
+        // I am targeting an element in the page, 
+        // an anchor. First load page, the scroll
+        // the element into view.
+        // ----------------------------------------
+
+        var count = (link.split("/").length - 1);        
+        if (count > 1) {
+            // anchor element 
+            innerElement = link.split("/")[2];            
+
+            // page to load
+            link = '#/' + link.split("/")[1];
+        }
+
+
+
+        // get path (route) for page
+        var route = routes[link];
+
+        // if route exists, load page
+        if (route) loadPage(route, innerElement);
+    };
+    router();
+
+    async function loadPage(url, innerElement){
+        // load page
+        const res     = await fetch(url);
+        const content = await res.text();
+        const element = document.getElementById('content');
+        element.innerHTML = content;
+
+        // element scroll into view
+        if (innerElement) {            
+            scrollIntoView(innerElement);
+        }        
+    }
+
+    function scrollIntoView(id){
+        document.getElementById(id).scrollIntoView();
+    }
+
+    window.addEventListener('hashchange', router);    
+  
+</script>
+  
 </body>
 </html>
